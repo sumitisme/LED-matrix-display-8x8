@@ -5,4 +5,4 @@ This is the code and the general description for an LED matrix project I persona
 <img src = "img/project image.jpg">
 
 # The Schematic for the project
-<img src = "img/project image2.jpg>
+<img src = "img/project image2.jpg">
