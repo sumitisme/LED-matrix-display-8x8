@@ -6,3 +6,20 @@ This is the code and the general description for an LED matrix project I persona
 
 # The Schematic for the project
 <img src = "img/project image2.jpg">
+
+# Parts used
+* bc547 transistors * 8
+* A bunch of M-to-M jumper wires. (around 50)
+* 74HC595 Shift resistors * 2
+* Breadboard * 2
+* Perf board * 1
+* Red LEDs * 64
+* Arduino UNO R3 * 1
+* Solder
+
+# Softwares used
+* Arduino IDE
+* Proteus 8 professional
+
+# Team members
+* Sumit Poudel
