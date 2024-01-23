@@ -8,7 +8,7 @@ This is the code and the general description for an LED matrix project I persona
 <img src = "img/project image2.jpg">
 
 # Parts used
-* bc547 transistors * 8
+* bc547 transistors * 8 (I had initially used 2n2222a but decided to switch since bc547 was cheaper and easier to find)
 * A bunch of M-to-M jumper wires. (around 50)
 * 74HC595 Shift resistors * 2
 * Breadboard * 2
