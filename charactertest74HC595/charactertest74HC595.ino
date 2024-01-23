@@ -7,7 +7,7 @@ int datainR = 7;
 int latchpinC = 9;
 int datainC = 12;
 
-int wait = 9;
+int wait = 100;
 
 void setup() {
   // put your setup code here, to run once:
@@ -25,13 +25,15 @@ void loop() {
 
   //This will be a program to print each letter of the alphabet hopefully
 //  S();
-  clearscr();
+//  clearscr();
 //  line();
-  U();
+//  U();
 //  M();
 //  I();
 //  delay(20);
 //  T();
+
+  line();
 
 }
 
@@ -50,6 +52,21 @@ void clearscr() {
 }
 
 void line() {
+  byte col[] = {0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80};
+  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+    digitalWrite(latchpinC, HIGH);
+
+    digitalWrite(latchpinR, LOW);
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+    digitalWrite(latchpinR, HIGH);
+
+    delay(wait);
+  }
+
   return;
 }
 
