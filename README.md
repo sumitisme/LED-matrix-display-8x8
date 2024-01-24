@@ -5,7 +5,7 @@ This is the code and the general description for an LED matrix project I persona
 <img src = "img/project image.jpg">
 
 # The Schematic for the project
-<img src = "img/project update1.jpg">
+<img src = "img/Schematic update1.jpg">
 
 # Parts used
 * bc547 transistors * 8 (I had initially used 2n2222a but decided to switch since bc547 was cheaper and easier to find)
