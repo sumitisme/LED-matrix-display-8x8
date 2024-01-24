@@ -24,7 +24,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //This will be a program to print each letter of the alphabet hopefully
-//  S();
+  S();
 //  clearscr();
 //  line();
 //  U();
@@ -33,7 +33,7 @@ void loop() {
 //  delay(20);
 //  T();
 
-  line();
+//  line();
 
 }
 
