@@ -15,6 +15,7 @@ This is the code and the general description for an LED matrix project I persona
 * Perf board * 1
 * Red LEDs * 64
 * Arduino UNO R3 * 1
+* 1kOhm resistor * 8
 * Solder
 
 # Softwares used
