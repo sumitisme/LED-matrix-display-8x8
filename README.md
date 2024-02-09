@@ -4,6 +4,14 @@ This is the code and the general description for an LED matrix project I persona
 # The Incomplete project on hardware
 <img src = "img/project image.jpg">
 
+# The First semi working project on hardware
+<img src = "img/project image3">
+<p>Here one of the columns is dead. This was because of the terrible soldering. I hope to manage it at some point in the coming month</p>
+
+# The Complete circuit on breadboard
+<img src = "img/circuit on breadboard">
+<p>The Circuit looks messy but it was fun to work with! The project was for me to learn about something new and this genuinely satisfies me.</p>
+
 # The Schematic for the project
 <img src = "img/Schematic update1.jpg">
 
