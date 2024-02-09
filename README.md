@@ -7,6 +7,9 @@ This is the code and the general description for an LED matrix project I persona
 # The First semi working project on hardware
 <img src = "img/project image3.jpg">
 <p>Here one of the columns is dead. This was because of the terrible soldering. I hope to manage it at some point in the coming month</p>
+<br>
+<img src = "img/S test 1.jpg">
+<p>This is printing the letter S but since one of the columns is dead along with another one pixel, it looks odd. It should be showing S</p>
 
 # The Complete circuit on breadboard
 <img src = "img/circuit on breadboard.jpg">

@@ -27,14 +27,14 @@ void loop() {
 
   //This will be a program to print each letter of the alphabet hopefully
 //  S();
-//  U();
+  U();
 //  M();
 //  I();
 //  delay(20);
 //  T();
 
-  analogWrite(source, 100);
-  line();
+  analogWrite(source, 255);
+//  line();
   clearscr();
   delay(wait);
 
@@ -55,7 +55,7 @@ void clearscr() {
 }
 
 void line() {
-  byte col[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+  byte col[] = {0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80};
   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
 
   for(int i = 0; i < 8; i++) {
