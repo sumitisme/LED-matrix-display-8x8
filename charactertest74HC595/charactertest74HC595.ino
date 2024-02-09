@@ -9,7 +9,7 @@ int datainC = 12;
 
 int source = 5;
 
-int wait = 100;
+int wait = 0;
 
 void setup() {
   // put your setup code here, to run once:
@@ -19,6 +19,7 @@ void setup() {
   pinMode(datainR, OUTPUT);
   pinMode(latchpinC, OUTPUT);
   pinMode(datainC, OUTPUT);
+  pinMode(source, OUTPUT);
 }
 
 void loop() {
@@ -26,15 +27,13 @@ void loop() {
 
   //This will be a program to print each letter of the alphabet hopefully
 //  S();
-//  clearscr();
-//  line();
 //  U();
 //  M();
 //  I();
 //  delay(20);
 //  T();
 
-  analogWrite(source, 110);
+  analogWrite(source, 100);
   line();
   clearscr();
   delay(wait);
@@ -56,7 +55,7 @@ void clearscr() {
 }
 
 void line() {
-  byte col[] = {0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80};
+  byte col[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
 
   for(int i = 0; i < 8; i++) {
