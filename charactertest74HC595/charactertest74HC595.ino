@@ -7,6 +7,8 @@ int datainR = 7;
 int latchpinC = 9;
 int datainC = 12;
 
+int source = 5;
+
 int wait = 100;
 
 void setup() {
@@ -17,14 +19,13 @@ void setup() {
   pinMode(datainR, OUTPUT);
   pinMode(latchpinC, OUTPUT);
   pinMode(datainC, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 
   //This will be a program to print each letter of the alphabet hopefully
-  S();
+//  S();
 //  clearscr();
 //  line();
 //  U();
@@ -33,7 +34,10 @@ void loop() {
 //  delay(20);
 //  T();
 
-//  line();
+  analogWrite(source, 110);
+  line();
+  clearscr();
+  delay(wait);
 
 }
 
