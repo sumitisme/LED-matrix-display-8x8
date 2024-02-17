@@ -11,6 +11,10 @@ This is the code and the general description for an LED matrix project I persona
 <img src = "img/S test 1.jpg">
 <p>This is printing the letter S but since one of the columns is dead along with another one pixel, it looks odd. It should be showing S</p>
 
+## The FINAL working model (showing the character S)
+<img src = "img/final project.jpg">
+<p>This is the final product after fixing most things. Some of the lEDs are dead and I haven't used resistors, so the life of the LEDs won't be very good. But the project is done!</p>
+
 # The Complete circuit on breadboard
 <img src = "img/circuit on breadboard.jpg">
 <p>The Circuit looks messy but it was fun to work with! The project was for me to learn about something new and this genuinely satisfies me.</p>

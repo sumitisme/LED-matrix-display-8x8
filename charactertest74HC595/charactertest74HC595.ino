@@ -9,7 +9,7 @@ int datainC = 12;
 
 int source = 5;
 
-int wait = 0;
+int wait = 1;
 
 void setup() {
   // put your setup code here, to run once:
@@ -26,8 +26,8 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //This will be a program to print each letter of the alphabet hopefully
-//  S();
-  U();
+  S();
+//  U();
 //  M();
 //  I();
 //  delay(20);
@@ -35,7 +35,7 @@ void loop() {
 
   analogWrite(source, 255);
 //  line();
-  clearscr();
+//  clearscr();
   delay(wait);
 
 }
@@ -55,8 +55,8 @@ void clearscr() {
 }
 
 void line() {
-  byte col[] = {0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80, 0x80};
-  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+  byte col[] = {0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01};
+  byte row[] = {0b10000000, 0b01000000, 0b00100000, 0b00010000, 0b00001000, 0b00000100, 0b000000010, 0b00000001};
 
   for(int i = 0; i < 8; i++) {
     digitalWrite(latchpinC, LOW);
