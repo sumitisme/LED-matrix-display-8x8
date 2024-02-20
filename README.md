@@ -23,9 +23,7 @@ This is the code and the general description for an LED matrix project I persona
 <img src = "img/Schematic update1.jpg">
 
 ## The video for the final finished project
-<video width = "320" height = "240" controls>
-    <source src = "img/project video.mp4" type = "video/mp4">
-</video>
+<video src='img/project video.mp4' width=180>
 
 # Parts used
 * bc547 transistors * 8 (I had initially used 2n2222a but decided to switch since bc547 was cheaper and easier to find)
