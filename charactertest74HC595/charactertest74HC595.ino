@@ -26,12 +26,16 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //This will be a program to print each letter of the alphabet hopefully
-  S();
+//  S();
 //  U();
 //  M();
 //  I();
-//  delay(20);
 //  T();
+
+  love();
+  love2();
+  
+//  delay(20);
 
   analogWrite(source, 255);
 //  line();
@@ -51,6 +55,63 @@ void clearscr() {
     digitalWrite(latchpinC, HIGH);
   }
 
+  return;
+}
+
+void love() {
+
+   byte col[] = {0b00000000, 0b01100110, 0b10011001, 0b10000001, 0b10000001, 0b01000010, 0b00100100, 0b00011000};
+   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+   int i = 0;
+
+   while(i < 100) {
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+
+    digitalWrite(latchpinC, HIGH);
+    
+    digitalWrite(latchpinR, LOW);
+  
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+
+    digitalWrite(latchpinR, HIGH);
+    
+    delay(wait);
+    }  
+   i++;
+   }
+
+    
+  return;
+}
+
+void love2() {
+  byte col[] = {0b00000000, 0b00000000, 0b00100100, 0b01011010, 0b01000010, 0b00100100, 0b00011000, 0b00000000};
+   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+   int i = 0;
+
+   while(i < 100) {
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+
+    digitalWrite(latchpinC, HIGH);
+    
+    digitalWrite(latchpinR, LOW);
+  
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+
+    digitalWrite(latchpinR, HIGH);
+    
+    delay(wait);
+    }  
+   i++;
+   }
+
+    
   return;
 }
 
@@ -240,28 +301,31 @@ void line() {
 //  return;
 //}
 //
-//void I() {
-//  byte col[] = {}; 
-//  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
-//
-//  
-//  for(int i = 0; i < 8; i++) {
-//    digitalWrite(latchpinC, LOW);
-//
-//    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
-//
-//    digitalWrite(latchpinC, HIGH);
-//    
-//    digitalWrite(latchpinR, LOW);
-//  
-//    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
-//
-//    digitalWrite(latchpinR, HIGH);
-//    
-//    delay(wait);
-//  }  
-//  return;
-//}
+void I() {
+  byte col[] = {0b01111110, 0b01111110, 0b00011000, 0b00011000, 0b00011000, 0b00011000, 0b01111110, 0b01111110}; 
+  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
+  int i = 0;
+
+  while(i < 100) {
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+
+    digitalWrite(latchpinC, HIGH);
+    
+    digitalWrite(latchpinR, LOW);
+  
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+
+    digitalWrite(latchpinR, HIGH);
+    
+    delay(wait);
+  }  
+    i++;
+    }
+  return;
+}
 //
 //void J() {
 //  byte col[] = {}; 
@@ -332,28 +396,32 @@ void line() {
 //  return;
 //}
 //
-//void M() {
-//  byte col[] = {}; 
-//  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
-//
-//  
-//  for(int i = 0; i < 8; i++) {
-//    digitalWrite(latchpinC, LOW);
-//
-//    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
-//
-//    digitalWrite(latchpinC, HIGH);
-//    
-//    digitalWrite(latchpinR, LOW);
-//  
-//    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
-//
-//    digitalWrite(latchpinR, HIGH);
-//    
-//    delay(wait);
-//  }
-//  return;
-//}
+void M() {
+  byte col[] = {0b11000011, 0b11100111, 0b11111111, 0b11111111, 0b11011011, 0b11000011, 0b11000011, 0b11000011}; 
+  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
+  int i =0;
+
+  while(i < 100) {
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+
+    digitalWrite(latchpinC, HIGH);
+    
+    digitalWrite(latchpinR, LOW);
+  
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+
+    digitalWrite(latchpinR, HIGH);
+    
+    delay(wait);
+  }
+  i++;
+  }
+  
+  return;
+}
 //
 //void N() {
 //  byte col[] = {}; 
@@ -475,7 +543,7 @@ void S() {
   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is supposed to be for multiplexing
   int i = 0;
   
-  while(i < 10) {
+  while(i < 80) {
     for(int i = 0; i < 8; i++) {
       digitalWrite(latchpinC, LOW);
 
@@ -495,38 +563,42 @@ void S() {
     }
   i++;
   }
-  
   return;
 }
 
-//void T() {
-//  byte col[] = {0B01111110, 0B01111110, 0B00011000, 0B00011000, 0B00011000, 0B00011000, 0B00011000, 0B00011000}; 
-//  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
-//
-//  
-//  for(int i = 0; i < 8; i++) {
-//    digitalWrite(latchpinC, LOW);
-//
-//    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
-//
-//    digitalWrite(latchpinC, HIGH);
-//    
-//    digitalWrite(latchpinR, LOW);
-//  
-//    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
-//
-//    digitalWrite(latchpinR, HIGH);
-//    
-//    delay(wait);
-//  }
-//  return;
-//}
-//
+void T() {
+  byte col[] = {0B01111110, 0B01111110, 0B00011000, 0B00011000, 0B00011000, 0B00011000, 0B00011000, 0B00011000}; 
+  byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01}; // This is kind of supposed to be for multiplexing
+  int i = 0;
+
+  while(i < 100) {
+  for(int i = 0; i < 8; i++) {
+    digitalWrite(latchpinC, LOW);
+
+    shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
+
+    digitalWrite(latchpinC, HIGH);
+    
+    digitalWrite(latchpinR, LOW);
+  
+    shiftOut(datainR, clockpinRC, LSBFIRST, row[i]);
+
+    digitalWrite(latchpinR, HIGH);
+    
+    delay(wait);
+  }
+  i++;
+  }
+  return;
+}
+
 
 void U() {
-  byte col[] = {0x66, 0x66, 0x66, 0x66, 0x66, 0x7E, 0x7E, 0x7E};
+  byte col[] = {0x66, 0x66, 0x66, 0x66, 0x66, 0x66, 0x7E, 0x7E};
   byte row[] = {0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01};
+  int i = 0;
 
+  while(i < 100) {
   for(int i = 0; i < 8; i++) {
     digitalWrite(latchpinC, LOW);
     shiftOut(datainC, clockpinRC, LSBFIRST, col[i]);
@@ -537,6 +609,8 @@ void U() {
     digitalWrite(latchpinR, HIGH);
 
     delay(wait);
+  }
+  i++;
   }
 
   return;
