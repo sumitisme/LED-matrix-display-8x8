@@ -22,9 +22,6 @@ This is the code and the general description for an LED matrix project I persona
 # The Schematic for the project
 <img src = "img/Schematic update1.jpg">
 
-## The video for the final finished project
-<video src='img/project video.mp4' width = 180 height = 180>
-
 # Parts used
 * bc547 transistors * 8 (I had initially used 2n2222a but decided to switch since bc547 was cheaper and easier to find)
 * A bunch of M-to-M jumper wires. (around 50)
@@ -42,3 +39,5 @@ This is the code and the general description for an LED matrix project I persona
 
 # Team members
 * Sumit Poudel
+
+# THE VIDEO FOR THE PROJECT 
