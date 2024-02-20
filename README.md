@@ -41,3 +41,5 @@ This is the code and the general description for an LED matrix project I persona
 * Sumit Poudel
 
 # THE VIDEO FOR THE PROJECT 
+https://github.com/sumitisme/LED-matrix-display-8x8/assets/142044183/12386940-07e0-472a-889f-2b971ad9e4eb
+
