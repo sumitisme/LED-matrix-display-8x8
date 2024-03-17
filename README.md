@@ -1,4 +1,5 @@
 # LED-matrix-display-8x8
+THE CODE SUCKS. I JUST WANTED THE DISPLAY TO WORK AND NOTHING MORE. THERE WERE TONS OF WAYS WHERE IT COULD HAVE BEEN BETTER. I TOOK BAD STEPS AND I AM AWARE! Many parts of the code gets repeated, there is a lot of debugging to do and I could have just use the bitshift operators (>> and <<) for the rows. I didn't choose to do it for some reason so the code sucks. I don't recommend you look at it at all haha. <br><br> 
 This is the code and the general description for an LED matrix project I personally have been working in. The project is yet to be completed and I intend to add more to it. The code is amateur-esque as I have near none experience on arduino currently. I was interested in the project and picked up the idea.
 
 # The Incomplete project on hardware
