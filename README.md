@@ -34,7 +34,7 @@ This is the code and the general description for an LED matrix project I persona
 * 1kOhm resistor * 8
 * Solder
 
-# Softwares used
+# Software used
 * Arduino IDE
 * Proteus 8 professional
 
